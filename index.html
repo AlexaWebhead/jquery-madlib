@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+    <!-- meta tags -->
+    	<title>Zee MadLib</title>
+    	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- seo meta -->
+		<meta name="title" content="">
+		<meta name="description" content="">
+		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
+	<!-- load style sheets -->
+	<!-- load fonts.css first if using web font services -->
+		<link rel="stylesheet" type="text/css" href="content/css/main.css" />        
+        <link rel="stylesheet" href="content/css/print.css" media="print" title="Print Preview" />
+        <!-- load IE conditional style sheets -->
+		<!--[if IE 7]>
+		    <link rel="stylesheet" type="text/css" href="/content/css/ie7.css" />
+		<![endif]-->
+	<!-- load JavaScript -->
+		<script type="text/javascript" src="content/js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js"></script>
+        <!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    </head>
+    <body>
+        <div id="wrapper">
+			<header>
+				<h1>Welcome to Zee MadLibs</h1>
+			</header>
+            
+            <div id="main" role="main">
+                <section id="story1">
+                    <h2>MadLib #1</h2>
+                    <form id="madlib1" class="clearfix">
+                        <fieldset>
+                            <label for ="input1">Animal</label>
+                            <input name="input1" id="input1" type="text" />
+
+                            <label for ="input2">Piece of clothing</label>
+                            <input name="input2" id="input2" type="text" />
+
+                            <label for ="input3">Body part</label>
+                            <input name="input3" id="input3" type="text" />
+
+                            <label for ="input4">Adjective</label>
+                            <input name="input4" id="input4" type="text" />
+
+                            <label for ="input5">Piece of clothing</label>
+                            <input name="input5" id="input5" type="text" />
+                        </fieldset>
+                        <fieldset>
+                            <label for ="input6">Noun</label>
+                            <input name="input6" id="input6" type="text" />
+
+                            <label for ="input7">Noun</label>
+                            <input name="input7" id="input7" type="text" />
+
+                            <label for ="input8">Objects used as projectiles</label>
+                            <input name="input8" id="input8" type="text" />
+
+                            <label for ="input9">Body part</label>
+                            <input name="input9" id="input9" type="text" />
+
+                            <label for ="input10">Noun</label>
+                            <input name="input10" id="input10" type="text" />
+                        </fieldset>
+                        <fieldset>
+                            <input type="button" value="Generate Zee MadLib!" onClick="generate();" />
+                        </fieldset>
+                    </form>
+                    <p class="game-output">There was once an Emperor who had a <span class="output1"></span> clad with gold. It had a golden <span class="output2"></span> on each <span class="output3"></span>, and why was this? It was a <span class="output4"></span> creature, with slender legs, bright, intelligent eyes, and a <span class="output5"></span> that hung down over his neck like a veil. He had carried his master through <span class="output6"></span> and <span class="output7"></span> in the battle-field, with the <span class="output8"></span> whistling round him; he had kicked and bitten, and taken part in the fight, when the enemy advanced; and, with his master on his <span class="output9"></span>, he had dashed over the fallen foe, and saved the golden <span class="output10"></span> and the Emperor's life, which was of more value than the brightest gold. This is the reason for the Emperor's <span class="output1"></span> wearing golden <span class="output2"></span>s. </p>
+                </section>
+
+                <section id="story2">
+                    <h2>MadLib #2</h2>
+                    <form id="madlib2" class="clearfix">
+                        <fieldset>
+                            <label for ="input1">Emotional state</label>
+                            <input name="input1" id="input1" type="text" />
+
+                            <label for ="input2">Plural noun</label>
+                            <input name="input2" id="input2" type="text" />
+
+                            <label for ="input3">Location</label>
+                            <input name="input3" id="input3" type="text" />
+
+                            <label for ="input4">Noun</label>
+                            <input name="input4" id="input4" type="text" />
+
+                            <label for ="input5">Small place</label>
+                            <input name="input5" id="input5" type="text" />
+                        </fieldset>
+                        <fieldset>
+                            <label for ="input6">Place</label>
+                            <input name="input6" id="input6" type="text" />
+
+                            <label for ="input7">Plural noun</label>
+                            <input name="input7" id="input7" type="text" />
+
+                            <label for ="input8">Verb</label>
+                            <input name="input8" id="input8" type="text" />
+
+                            <label for ="input9">Adjective</label>
+                            <input name="input9" id="input9" type="text" />
+
+                            <label for ="input10">Adjective</label>
+                            <input name="input10" id="input10" type="text" />
+                        </fieldset>
+                        <fieldset>
+                            <input type="button" value="Generate Zee MadLib!" onClick="generate();" />
+                        </fieldset>
+                    </form>
+                    <p class="game-output">Many years ago, there was an Emperor, who was so excessively <span class="output1">fond</span> of new <span class="output2">clothes</span>, that he spent all his money on them. He did not trouble himself in the least about his soldiers; nor did he care to go either to <span class="output3">theater</span> or hunt, except for the opportunities then afforded him for displaying his new <span class="output2">clothes</span>. He had a different <span class="output4">suit</span> for each hour of the day; and as of any other king or emperor, one is accustomed to say, "he is sitting in council," it was always said of him, "The Emperor is sitting in his <span class="output5">wardrobe</span>."
+                    <br />
+                    Time passed merrily in the large <span class="output6">town</span> which was his capital; strangers arrived every day at the court. One day, two <span class="output7">rogues</span>, calling themselves weavers, made their appearance. They gave out that they knew how to <span class="output8">weave</span> stuffs of the most beautiful colors and elaborate patterns, the <span class="output2">clothes</span> manufactured from which should have the wonderful property of remaining <span class="output9">invisible</span> to everyone who was <span class="output10">unfit</span> for the office he held, or who was extraordinarily simple in character.</p>
+                </section>
+            </div><!--end #main-->
+
+            <footer>
+                
+            </footer>
+        </div><!--end #wrapper-->
+	<!-- begin body scripts -->  
+		<script src="content/js/lib/repond.min.js"></script> 
+        <script src="content/js/scripts.js"></script> 
+    <!-- end body scripts -->
+    <script type="text/javascript">
+        function generate()  {
+            $('form').slideUp("slow");
+            $('#game-output').slideDown("slow");
+            for(i=0; i<11; i++){
+                var putOut = $('#input'+i).val();
+                $('.output'+i).text(putOut);
+            }
+        };
+    </script>
+    <!-- Analytics -  Change UA-XXXXX-X to be your site's ID -->
+        <script>
+            window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+            Modernizr.load({
+              load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+            });
+        </script>      
+    </body>
+</html>

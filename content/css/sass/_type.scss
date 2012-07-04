@@ -1,0 +1,28 @@
+// *****TEXT
+    
+        $font-sans: "Helvetica",sans-serif;
+        $font-serif: "Georgia",serif;
+    
+        //Font sizes
+        
+            $size-head: 120%;
+            $size-sub: 110%;
+            $size-body: 100%;
+            $size-small: 85%;
+
+        //Letter/word spacing
+        
+            $l-space: 1px;
+            $w-space: 2px;
+            
+// *****Text-shadow
+                
+        @mixin t-shad {
+            text-shadow: -1px -1px 0px $black,
+                        1px 1px 0px $red;
+        }
+        
+        @mixin t-shad-rev {
+            text-shadow: -1px -1px 0px $red,
+                        1px 1px 0px $black;
+        }

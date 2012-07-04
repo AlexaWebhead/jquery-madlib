@@ -1,0 +1,187 @@
+@import url("reset.css");
+@import "_formalize";
+
+/*-->> GLOBAL <<--*/
+
+$legacy-support-for-ie5: false;
+$legacy-support-for-ie6: false;
+$experimental-support-for-pie: true;
+
+@import "compass";
+@import "compass/css3";
+@import "compass/css3/pie";
+@import "compass/utilities";
+@import "_colors";
+@import "_type";
+@import "_object-styling";
+
+/* CSS PIE */
+$pie-behavior: url("/content/css/PIE.htc");
+$pie-base-class: pie-element;
+
+// *****STYLING IMPORTS
+
+    //colors
+        @import "_colors";
+
+    //type
+        @import "_type";
+        
+    //object styles
+        @import "_object-styling";
+
+// *****LAYOUT (see grid.css for layout classes)
+
+    //dimensions & layout
+    
+      $width-def: 100%;
+      $height-def: auto;
+
+    //margin & padding
+
+      $marg-center: 10px auto;
+      $marg-def: 10px;
+      
+      $pad-def: 10px 0;
+
+// *****FUNCTIONS
+    @import "_mixins";
+
+/*-->> MAIN STYLING <<--*/
+
+html {
+    font-size: 18px;
+    font-family: $font-sans;
+    body {
+        background: $l-gray url(../img/bg.jpg);
+        #wrapper {
+            width: 80%;
+            margin: $marg-center;
+            padding: 20px;
+            background: #e7e8ea;
+            @include border-radius(20px);
+            @include box-shadow(rgba(0,0,0,.2) 0 0 5px 0px inset);
+        }
+    }
+}
+p {
+  line-height: 30px;
+}
+
+/*-->> Header <<--*/
+
+header {
+    padding: 0 1%;
+    width: 98%;
+    border-bottom: 2px solid $l-gray;
+    @include border-top-radius(20px);
+    h1 {
+      padding: 20px 0;
+      width: 90%;
+      font-weight: normal;
+      @include border-radius(15px);
+    }
+}
+
+/*-->> Nav <<--*/
+
+nav {
+    
+}
+
+/*-->> Main <<--*/
+
+#main {
+    section {
+      margin: $marg-def;
+      input {
+        display: block;
+        margin: 10px 0 20px;
+      }
+      fieldset {
+        width: 50%;
+        float: left;
+        border: none;
+      }
+    }
+    h2 {
+      font-weight: normal;
+      margin: 20px 0;
+    }
+    span {
+      color: $blue;
+    }
+    .game-output {
+      clear: left;
+      display: none;
+    }
+}
+
+/*-->> Footer <<--*/
+
+footer {
+    
+}
+
+/*-->> Webkit browser fixes <<--*/
+
+@media all and (-webkit-min-device-pixel-ratio:0) {
+  
+}
+
+/*-->> Clear & float <<--*/
+
+.clearfix {
+    zoom: 1;
+    &:before{
+        content: ""; display: table;
+    };
+    &:after {
+        content: ""; display: table; clear: both;
+    }
+}
+
+.fl { float: left; }
+.fr { float: right; }
+
+/*-->> RESPONSIVE DESIGN <<--*/
+
+@media screen and (max-width: 980px) {
+  
+}
+
+@media screen and (max-width: 650px) {
+  
+}
+
+@media screen and (max-width: 480px) {
+  
+  //show only on desktop
+  .mob-hide {
+    display: none !important;
+  }
+}
+
+/*-->> Display classes <<--*/
+  //show only on mobile
+  .mob-show {
+    display: none !important;
+  }
+  .no-text {
+      text-indent: -999em;
+  }
+  
+/*-->> Flex img/vid fixes <<--*/
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+.video embed,
+.video object,
+.video iframe {
+  width: 100%;
+  height: auto;
+}

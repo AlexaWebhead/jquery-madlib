@@ -94,6 +94,7 @@ nav {
 #main {
     section {
       margin: $marg-def;
+      display: none;
       input {
         display: block;
         margin: 10px 0 20px;
@@ -107,6 +108,11 @@ nav {
     h2 {
       font-weight: normal;
       margin: 20px 0;
+    }
+    h4 {
+      color: $red;
+      display: none;
+      margin: $marg-def;
     }
     span {
       color: $blue;

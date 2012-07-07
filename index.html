@@ -156,7 +156,49 @@
                             <input type="button" value="Generate Zee MadLib!" onClick="generate();" />
                         </fieldset>
                     </form>
-                    <p class="game-output">The sea here formed a little bay, in which the water was quite <span class="output1">still</span>, but very deep; so the little mermaid swam with the handsome <span class="output2">prince</span> to the beach, which was covered with fine, white sand, and there she laid them in the warm sunshine. Then bells sounded in the large white building on the cliff, and a number of young <span class="output3">girl</span>s came into the garden. The little mermaid swam out farther from the shore and placed herself between some high <span class="output4">rocks</span> that rose out of the water; then she covered her head and neck with the foam of the sea so that her little face might not be seen, and watched to see what would become of poor <span class="output2">prince</span>. She did not wait long before she saw one of the young <span class="output3">girl</span>s approach the spot where they lay. The <span class="output3">girl</span> seemed <span class="output5">frightened</span> at first, but only for a moment; then the <span class="output3"></span> fetched a number of people, and the mermaid saw that <span class="output2">prince</span> came to life again, and <span class="output6">smiled upon</span> those who stood around. But <span class="output2"></span> knew not that she was the real savior. This made her very <span class="output7">unhappy</span>, and when <span class="output2"></span> was led away into the great building, she dived down <span class="output8">sorrowfully</span> into the water, and returned to her father's <span class="output9">castle</span>. She had always been silent and thoughtful, and now she was more so than ever. Her sisters asked her what she <span class="output10">had seen</span> during her first visit to the surface of the water; but she would tell them nothing. Many an evening and morning did she rise to the place where she had left <span class="output2"></span></p>
+                    <p class="game-output">The sea here formed a little bay, in which the water was quite <span class="output1"></span>, but very deep; so the little mermaid swam with the handsome <span class="output2"></span> to the beach, which was covered with fine, white sand, and there she laid them in the warm sunshine. Then bells sounded in the large white building on the cliff, and a number of young <span class="output3"></span>s came into the garden. The little mermaid swam out farther from the shore and placed herself between some high <span class="output4"></span> that rose out of the water; then she covered her head and neck with the foam of the sea so that her little face might not be seen, and watched to see what would become of poor <span class="output2"></span>. She did not wait long before she saw one of the young <span class="output3"></span>s approach the spot where they lay. The <span class="output3"></span> seemed <span class="output5"></span> at first, but only for a moment; then the <span class="output3"></span> fetched a number of people, and the mermaid saw that <span class="output2"></span> came to life again, and <span class="output6"></span> those who stood around. But <span class="output2"></span> knew not that she was the real savior. This made her very <span class="output7"></span>, and when <span class="output2"></span> was led away into the great building, she dived down <span class="output8"></span> into the water, and returned to her father's <span class="output9"></span>. She had always been silent and thoughtful, and now she was more so than ever. Her sisters asked her what she <span class="output10"></span> during her first visit to the surface of the water; but she would tell them nothing. Many an evening and morning did she rise to the place where she had left <span class="output2"></span></p>
+                </section>
+
+                <section id="story4">
+                    <h2>MadLib #4</h2>
+                    <form id="madlib2" class="clearfix">
+                        <fieldset>
+                            <label for ="input1">Noun</label>
+                            <input name="input1" id="input1" type="text" required />
+
+                            <label for ="input2">Noun</label>
+                            <input name="input2" id="input2" type="text" required />
+
+                            <label for ="input3">Plural noun</label>
+                            <input name="input3" id="input3" type="text" required />
+
+                            <label for ="input4">Plural Noun</label>
+                            <input name="input4" id="input4" type="text" required />
+
+                            <label for ="input5">Plural Noun</label>
+                            <input name="input5" id="input5" type="text" required />
+                        </fieldset>
+                        <fieldset>
+                            <label for ="input6">Plural Noun</label>
+                            <input name="input6" id="input6" type="text" required />
+
+                            <label for ="input7">Adjective</label>
+                            <input name="input7" id="input7" type="text" required />
+
+                            <label for ="input8">Color</label>
+                            <input name="input8" id="input8" type="text" required />
+
+                            <label for ="input9">Adjective</label>
+                            <input name="input9" id="input9" type="text" required />
+
+                            <label for ="input10">Noun</label>
+                            <input name="input10" id="input10" type="text" required />
+                        </fieldset>
+                        <fieldset>
+                            <input type="button" value="Generate Zee MadLib!" onClick="generate();" />
+                        </fieldset>
+                    </form>
+                    <p class="game-output">There was really a change in the weather. Towards morning, a thick <span class="output1">fog</span> covered the whole country round, and a keen wind arose, so that the <span class="output2">cold</span> seemed to freeze one's <span class="output3">bones</span>, but when the sun rose, the sight was splendid. Trees and <span class="output4">bushes</span> were covered with hoarfrost, and looked like a forest of white <span class="output5">coral</span>, while on every twig glittered frozen <span class="output6">dew-drops</span>. The many delicate forms concealed in summer by luxuriant foliage, were now clearly defined, and looked like <span class="output7">glittering</span> lace-work. From every twig glistened a <span class="output8">white</span> radiance. The birch, waving in the wind, looked full of life, like trees in summer, and its appearance was wondrously <span class="output9">beautiful</span>. And where the sun shone, how everything glittered and sparkled, as if <span class="output10">diamond</span> dust had been strewn about, while the snowy carpet of the earth appeared as if covered with <span class="output10">diamond</span>s, from which countless lights gleamed, more <span class="output8">white</span> than even the snow itself.</p>
                 </section>
             </div><!--end #main-->
 
@@ -170,19 +212,20 @@
     <!-- end body scripts -->
     <script type="text/javascript">
     $(document).ready(function(){
-        var storyDisplay = ["#story1","#story2","#story3"];
+        var storyDisplay = ["#story1","#story2","#story3", "#story4"];
         var displayRandom = Math.floor(Math.random()*storyDisplay.length);
 
         $(storyDisplay[displayRandom]).show(500, function(){
+            $(this).addClass("active");
             $("#instructions").slideDown();
         });
     });
         function generate()  {
-            $('form').slideUp("slow");
-            $('#game-output').slideDown("slow");
+            $('.active form').slideUp("slow");
+            $('.active .game-output').slideDown("slow");
             for(i=0; i<11; i++){
-                var putOut = $('#input'+i).val();
-                $('.output'+i).text(putOut);
+                var putOut = $('.active #input'+i).val();
+                $('.active .output'+i).text(putOut);
             }
         };
     </script>
